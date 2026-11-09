@@ -1,7 +1,7 @@
 // All site content lives here. Edit this file to add projects or links.
 window.SITE = {
   name: "Rayen Ben Abdelhafidh",
-  role: "Telecommunications engineer building AI systems, cloud platforms and connected-vehicle software.",
+  role: "Telecommunications engineer building AI systems, cloud platforms and embedded Linux and automotive software.",
   location: "Sfax, Tunisia. Open to roles in Europe, Canada and remote.",
   links: {
     email: "legendbro1555@gmail.com",
@@ -26,8 +26,8 @@ window.SITE = {
     },
     automotive: {
       name: "Automotive & embedded",
-      short: "AUTOSAR, in-vehicle networks, automotive testing and CI/CD for vehicle software.",
-      intro: "My final engineering year is the GT-ACE specialisation at ENET'Com: AUTOSAR architecture, in-vehicle communication networks, automotive safety and security, test techniques and DevOps for automotive software. This page collects the lab work and projects from that programme as I complete them.",
+      short: "Embedded Linux with Yocto, kernel drivers and secure boot, plus AUTOSAR and in-vehicle networks.",
+      intro: "I build embedded Linux systems from the ground up: cross toolchains, U-Boot with secure boot, kernel modules and drivers, and Yocto images with OTA updates, on Raspberry Pi and QEMU. My final engineering year is the GT-ACE specialisation at ENET'Com, adding AUTOSAR architecture, in-vehicle networks, automotive safety and security, and CI/CD for vehicle software.",
       wave: "can"
     },
     security: {
@@ -184,6 +184,18 @@ window.SITE = {
       stack: ["MCP", "OAuth2", "JWT", "Docker", "Grafana"],
       links: {}
     }
+  ],
+
+  embedded: [
+    { area: "Linux kernel development", items: "Kernel modules, character devices, GPIO, LED, I²C and SPI subsystems, sysfs, config fragments" },
+    { area: "Yocto and BitBake", items: "Layers and metadata, machine configs, images, distros, RAUC over-the-air updates" },
+    { area: "Bootloaders and secure boot", items: "U-Boot, dm-crypt, dm-verity" },
+    { area: "Build systems and toolchains", items: "GCC, binutils, crosstool-ng, cross and Canadian-cross compilation, make, CMake" },
+    { area: "OS internals", items: "Kbuild, system calls, device trees and overlays" },
+    { area: "Peripheral interfaces", items: "I²C, SPI, GPIO, UART, with i2c-tools, spidev and libgpiod" },
+    { area: "Root filesystems and libraries", items: "BusyBox, initramfs, static and shared libraries" },
+    { area: "Platforms", items: "Raspberry Pi Zero 2 W, QEMU (ARM)" },
+    { area: "Scripting and version control", items: "Bash, POSIX shell, Git submodules and patches" }
   ],
 
   coursework: [

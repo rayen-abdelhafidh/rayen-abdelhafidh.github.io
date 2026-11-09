@@ -170,6 +170,11 @@
     const order = { live: 0, client: 1, academic: 2, progress: 3, planned: 4 };
     projs.sort((a, b) => order[a.status] - order[b.status]);
     const course = k === "automotive" ? `
+      <section aria-labelledby="el-h">
+        <h2 id="el-h">Embedded Linux toolkit</h2>
+        <p class="lede small">What I work with when bringing up a board, from the toolchain to over-the-air updates.</p>
+        <ul class="coursework">${S.embedded.map((c) => `<li><h3>${esc(c.area)}</h3><p>${esc(c.items)}</p></li>`).join("")}</ul>
+      </section>
       <section aria-labelledby="cw-h">
         <h2 id="cw-h">Specialisation coursework, 2026/2027</h2>
         <p class="lede small">Final year at ENET'Com, GT-ACE class. Projects from these courses are added above as I finish them.</p>
