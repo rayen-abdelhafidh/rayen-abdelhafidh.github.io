@@ -166,7 +166,6 @@
     return `
       <section class="hero">
         <div class="hero-text">
-          <p class="avail"><span class="dot" aria-hidden="true"></span>Open to engineering roles in Europe, Canada and remote</p>
           <h1>${esc(S.name)}</h1>
           <p class="lede">${esc(S.role)}</p>
           <p class="hero-actions"><a class="btn" href="${esc(S.links.cv)}" download>Download CV</a><a class="btn btn-quiet" href="#work">See my work</a></p>
