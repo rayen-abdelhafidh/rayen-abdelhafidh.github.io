@@ -102,7 +102,7 @@ window.SITE = {
       what: "Website for a recruitment agency placing candidates in Germany, in German, English, French and Arabic with full right-to-left support.",
       how: "Next.js 16 and TypeScript, containerised with Docker and Caddy, deployed by GitHub Actions.",
       stack: ["Next.js", "TypeScript", "Tailwind", "Docker", "Caddy", "GitHub Actions"],
-      links: { live: "https://rayenbenabdelhafidh.github.io/German-Jobkonnektor/" }
+      links: { live: "https://germanjobkonnektor.com/en/" }
     },
     {
       id: "neurospace", tracks: ["cloud"], status: "client",
@@ -231,7 +231,7 @@ window.SITE.media = {
   mtm2:          { src: "img/shots/mtm2.webp", kind: "shot", bar: "MTM-2 Méthodes, draft review", alt: "MTM-2 draft screen showing a generated routing with standard minute values per operation" },
   neurospace:    { src: "img/shots/neurospace.webp", kind: "shot", bar: "NeuroSpace, live session", alt: "NeuroSpace classroom with a shared whiteboard, tutor and student video, and chat" },
   school:        { src: "img/shots/school.webp", kind: "shot", bar: "Côte-Nord platform, office dashboard", alt: "Driving-school dashboard with enrolments, revenue chart, today's lessons and alerts" },
-  jobkonnektor:  { src: "img/shots/jobkonnektor.webp", kind: "shot", bar: "rayenbenabdelhafidh.github.io/German-Jobkonnektor", alt: "German Jobkonnektor homepage in German" },
+  jobkonnektor:  { src: "img/shots/jobkonnektor.webp", kind: "shot", bar: "germanjobkonnektor.com/en", alt: "German Jobkonnektor homepage in English" },
   clinic:        { src: "img/diagrams/clinic.svg", kind: "diagram", alt: "Call flow: Twilio, Whisper, GPT agent, Playwright booking" },
   trading:       { src: "img/diagrams/trading.svg", kind: "diagram", alt: "TradingView alerts through Nginx to FastAPI, PostgreSQL, Redis and a React dashboard" },
   radar:         { src: "img/diagrams/radar.svg", kind: "diagram", alt: "Prospect sources into a PostgreSQL data vault, LLM scoring and CRM sync" },
