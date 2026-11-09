@@ -79,6 +79,7 @@
 
   // Large alternating case study (home page)
   function caseStudy(p, i) {
+    const m = (S.caseMeta || {})[p.id] || {};
     return `<article class="case ${i % 2 ? "case-flip" : ""}" id="${p.id}">
       <div class="case-media">${media(p.id, "frame-lg")}</div>
       <div class="case-text">
@@ -86,7 +87,11 @@
         <h3>${esc(p.title)}</h3>
         <p class="proj-what">${esc(p.what)}</p>
         <p class="proj-how">${esc(p.how)}</p>
-        <p class="proj-stack">${p.stack.map((s) => `<span>${esc(s)}</span>`).join("")}</p>
+        <dl class="facts">
+          ${m.role ? `<div><dt>Role</dt><dd>${esc(m.role)}</dd></div>` : ""}
+          ${m.context ? `<div><dt>Context</dt><dd>${esc(m.context)}</dd></div>` : ""}
+          <div><dt>Stack</dt><dd>${p.stack.map(esc).join(", ")}</dd></div>
+        </dl>
         ${linksFor(p)}
       </div>
     </article>`;
@@ -108,7 +113,7 @@
 
   function contactBlock() {
     const L = S.links;
-    return `<section class="contact" id="contact">
+    return `<section class="contact band" id="contact">
       <div>
         <h2>Let's talk</h2>
         <p class="lede">I'm looking for engineering roles in AI, cloud or embedded and automotive software, in Europe, Canada or remote.</p>
@@ -133,7 +138,10 @@
 
   // ---------- Pages ----------
   function home() {
-    const proof = S.proof.map((x) => `<li><strong>${esc(x.big)}</strong><span>${esc(x.small)}</span></li>`).join("");
+    const now = S.currently.map((x) => `<li><strong>${esc(x.role)}</strong><span>${esc(x.where)}</span></li>`).join("");
+    const clients = S.clients.map((c) => `<li>${esc(c)}</li>`).join("");
+    const toolbox = S.toolbox.map((g) => `<div class="tool-group"><h3>${esc(g.area)}</h3>
+      <ul>${g.items.map((i) => `<li>${esc(i)}</li>`).join("")}</ul></div>`).join("");
 
     const channels = Object.entries(S.tracks).map(([k, t]) => {
       const n = S.projects.filter((p) => p.tracks.includes(k)).length;
@@ -163,11 +171,15 @@
           <p class="lede">${esc(S.role)}</p>
           <p class="hero-actions"><a class="btn" href="${esc(S.links.cv)}" download>Download CV</a><a class="btn btn-quiet" href="#work">See my work</a></p>
         </div>
-        <figure class="portrait"><img src="img/rayen.webp" alt="Portrait of Rayen Ben Abdelhafidh" width="720" height="720"><figcaption>Based in Sfax, Tunisia</figcaption></figure>
-        <ul class="proof">${proof}</ul>
+        <figure class="portrait"><img src="img/rayen.webp" alt="Portrait of Rayen Ben Abdelhafidh" width="720" height="720"><figcaption>Sfax, Tunisia. Open to relocation.</figcaption></figure>
+        <div class="now">
+          <h2 class="now-h">Currently</h2>
+          <ul>${now}</ul>
+        </div>
+        <div class="clients"><h2 class="now-h">Worked with</h2><ul>${clients}</ul></div>
       </section>
-      <section aria-labelledby="tracks-h">
-        <div class="sec-head"><h2 id="tracks-h">Four tracks, one engineer</h2><p>Pick the one you're hiring for. Each has its own page you can share.</p></div>
+      <section class="band tracks" aria-labelledby="tracks-h">
+        <div class="sec-head"><h2 id="tracks-h">Four tracks, one engineer</h2><p>Pick the one you're hiring for. Each track has its own page you can share.</p></div>
         <ul class="channels">${channels}</ul>
       </section>
       <section id="work" aria-labelledby="sel-h">
@@ -176,20 +188,22 @@
         <h2 class="sub-h">More projects</h2>
         <div class="cards">${more}</div>
       </section>
-      <section aria-labelledby="exp-h">
-        <div class="sec-head"><h2 id="exp-h">Experience</h2></div>
+      <section class="editorial" aria-labelledby="exp-h">
+        <div class="ed-head"><h2 id="exp-h">Experience</h2><p>Two years of shipping for real clients while studying.</p></div>
         <ol class="timeline">${exp}</ol>
       </section>
-      <section aria-labelledby="edu-h" class="two-col">
+      <section class="editorial" aria-labelledby="tb-h">
+        <div class="ed-head"><h2 id="tb-h">Toolbox</h2><p>What I use, grouped by domain.</p></div>
+        <div class="toolbox">${toolbox}</div>
+      </section>
+      <section class="editorial" aria-labelledby="edu-h">
+        <div class="ed-head"><h2 id="edu-h">Education</h2></div>
         <div>
-          <h2 id="edu-h">Education</h2>
           <ol class="timeline">${edu}</ol>
-        </div>
-        <div>
-          <h2>Certifications</h2>
-          <ul class="plain">${S.certifications.map((c) => `<li>${esc(c)}</li>`).join("")}</ul>
-          <h2 class="sub-h2">Languages</h2>
-          <p>${esc(S.languages)}</p>
+          <div class="creds">
+            <div><h3>Certifications</h3><ul class="plain">${S.certifications.map((c) => `<li>${esc(c)}</li>`).join("")}</ul></div>
+            <div><h3>Languages</h3><ul class="plain">${S.languages.split(", ").map((l) => `<li>${esc(l)}</li>`).join("")}</ul></div>
+          </div>
         </div>
       </section>
       ${contactBlock()}`;

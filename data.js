@@ -257,3 +257,28 @@ window.SITE.proof = [
   { big: "Remote clients", small: "in Canada, Germany and Saudi Arabia" },
   { big: "3 languages", small: "Arabic, French and English" }
 ];
+
+// ---------- Redesign v2 content ----------
+window.SITE.currently = [
+  { role: "IT manager", where: "NeuroProdige and SoluClient, Québec (remote)" },
+  { role: "Freelance AI and cloud engineer", where: "Upwork, Top Rated, 21 jobs, 5.0 rating" },
+  { role: "Final-year engineering student", where: "Telecommunications, GT-ACE specialisation, ENET'Com" }
+];
+
+window.SITE.clients = ["NeuroProdige", "SoluClient", "AlgoMakers.ai", "German Jobkonnektor", "Softavera", "ENET'Com"];
+
+window.SITE.caseMeta = {
+  mtm2:         { role: "Co-author, AI and back end", context: "Engineering project, ENET'Com, 2026" },
+  neurospace:   { role: "IT team lead", context: "NeuroProdige, Québec, 2025–2026" },
+  school:       { role: "Platform designer and developer", context: "Driving school, Québec, 2026" },
+  jobkonnektor: { role: "Developer", context: "Recruitment agency, Munich, 2026" }
+};
+
+window.SITE.toolbox = [
+  { area: "AI and LLMs", items: ["LLM fine-tuning (GPT, Qwen, Kimi)", "RAG", "AI agents and MCP", "OpenAI Whisper", "YOLOv8", "PyTorch", "Hugging Face", "scikit-learn"] },
+  { area: "Cloud and DevOps", items: ["Docker and Compose", "Kubernetes", "AWS", "Nginx and Caddy", "GitHub Actions", "Linux servers", "PostgreSQL", "Redis"] },
+  { area: "Embedded and automotive", items: ["Embedded Linux", "Yocto and BitBake", "Linux kernel modules", "U-Boot and secure boot", "Cross toolchains", "AUTOSAR Classic", "CAN", "I²C, SPI, GPIO, UART"] },
+  { area: "Security", items: ["Server and API hardening", "TLS and mTLS", "OAuth2 and JWT", "Webhook signatures", "Secrets management", "Penetration testing (eJPT)"] },
+  { area: "Networks and telecom", items: ["5G and 4G", "Fibre optics", "Routing and switching (CCNA)", "HCIA-Datacom", "QoS monitoring"] },
+  { area: "Software", items: ["Python", "FastAPI and Flask", "TypeScript", "React and Next.js", "Node.js", "Flutter", "C", "Playwright"] }
+];
