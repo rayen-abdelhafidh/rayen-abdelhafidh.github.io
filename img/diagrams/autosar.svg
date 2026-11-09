@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" font-family="Schibsted Grotesk, Segoe UI, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#18202b"/></marker>
+<pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#e6eaf0" stroke-width="1"/></pattern></defs>
+<rect width="1600" height="1000" fill="#f4f6f9"/><rect width="1600" height="1000" fill="url(#g)"/>
+<text x="80" y="110" font-size="40" font-weight="800" fill="#18202b">AUTOSAR Classic layered architecture</text>
+<line x1="80" y1="140" x2="1520" y2="140" stroke="#d5dbe3" stroke-width="2"/>
+<rect x="80" y="260" width="307" height="230" rx="10" fill="#e8edfd" stroke="#2448d8" stroke-width="2"/>
+<text x="104" y="306" font-size="30" font-weight="700" fill="#18202b">Application</text>
+<text x="104" y="348" font-size="24" fill="#5b6676">Software components</text>
+<text x="104" y="382" font-size="24" fill="#5b6676">ports, runnables</text>
+<line x1="393" y1="375.0" x2="451" y2="375.0" stroke="#18202b" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="457" y="260" width="307" height="230" rx="10" fill="#ffffff" stroke="#d5dbe3" stroke-width="2"/>
+<text x="481" y="306" font-size="30" font-weight="700" fill="#18202b">RTE</text>
+<text x="481" y="348" font-size="24" fill="#5b6676">Runtime</text>
+<text x="481" y="382" font-size="24" fill="#5b6676">environment</text>
+<line x1="770" y1="375.0" x2="828" y2="375.0" stroke="#18202b" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="834" y="260" width="307" height="230" rx="10" fill="#ffffff" stroke="#d5dbe3" stroke-width="2"/>
+<text x="858" y="306" font-size="30" font-weight="700" fill="#18202b">Basic software</text>
+<text x="858" y="348" font-size="24" fill="#5b6676">Services, ECU and</text>
+<text x="858" y="382" font-size="24" fill="#5b6676">MCU abstraction</text>
+<line x1="1147" y1="375.0" x2="1205" y2="375.0" stroke="#18202b" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="1211" y="260" width="307" height="230" rx="10" fill="#ffffff" stroke="#d5dbe3" stroke-width="2"/>
+<text x="1235" y="306" font-size="30" font-weight="700" fill="#18202b">Microcontroller</text>
+<text x="1235" y="348" font-size="24" fill="#5b6676">ECU</text>
+<text x="1235" y="382" font-size="24" fill="#5b6676">hardware</text>
+</svg>

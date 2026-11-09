@@ -225,3 +225,35 @@ window.SITE = {
   certifications: ["eJPT, Junior Penetration Tester (INE)", "CCNA 1 and 2 (Cisco)", "HCIA-Datacom (Huawei)", "Cybersecurity Fundamentals (Google)"],
   languages: "Arabic (native), French (fluent), English (fluent)"
 };
+
+// Visuals per project. kind "shot" = real screenshot, "diagram" = architecture diagram.
+window.SITE.media = {
+  mtm2:          { src: "img/shots/mtm2.webp", kind: "shot", bar: "MTM-2 Méthodes, draft review", alt: "MTM-2 draft screen showing a generated routing with standard minute values per operation" },
+  neurospace:    { src: "img/shots/neurospace.webp", kind: "shot", bar: "NeuroSpace, live session", alt: "NeuroSpace classroom with a shared whiteboard, tutor and student video, and chat" },
+  school:        { src: "img/shots/school.webp", kind: "shot", bar: "Côte-Nord platform, office dashboard", alt: "Driving-school dashboard with enrolments, revenue chart, today's lessons and alerts" },
+  jobkonnektor:  { src: "img/shots/jobkonnektor.webp", kind: "shot", bar: "rayenbenabdelhafidh.github.io/German-Jobkonnektor", alt: "German Jobkonnektor homepage in German" },
+  clinic:        { src: "img/diagrams/clinic.svg", kind: "diagram", alt: "Call flow: Twilio, Whisper, GPT agent, Playwright booking" },
+  trading:       { src: "img/diagrams/trading.svg", kind: "diagram", alt: "TradingView alerts through Nginx to FastAPI, PostgreSQL, Redis and a React dashboard" },
+  radar:         { src: "img/diagrams/radar.svg", kind: "diagram", alt: "Prospect sources into a PostgreSQL data vault, LLM scoring and CRM sync" },
+  course:        { src: "img/diagrams/course.svg", kind: "diagram", alt: "Topic to LLM script to media generation to MP4 assembly" },
+  hachira:       { src: "img/diagrams/hachira.svg", kind: "diagram", alt: "IP cameras to YOLOv8 detection to Flask rules to mobile alerts" },
+  pdf:           { src: "img/diagrams/pdf.svg", kind: "diagram", alt: "PDFs through OCR and LLM extraction into Excel" },
+  scanner:       { src: "img/diagrams/scanner.svg", kind: "diagram", alt: "Binance pairs scanned on a schedule for EMA signals, with alerts" },
+  qos:           { src: "img/diagrams/qos.svg", kind: "diagram", alt: "5G KPIs into an anomaly model, map and dashboard" },
+  "can-ids":     { src: "img/diagrams/canids.svg", kind: "diagram", alt: "CAN traffic captured with SocketCAN, features, deep learning detector" },
+  "autosar-swc": { src: "img/diagrams/autosar.svg", kind: "diagram", alt: "AUTOSAR layers: application, RTE, basic software, microcontroller" },
+  "auto-cicd":   { src: "img/diagrams/autocicd.svg", kind: "diagram", alt: "Commit, cross build, tests and static analysis, artifacts" },
+  "webhook-sec": { src: "img/diagrams/webhook.svg", kind: "diagram", alt: "Payment flow with webhook signature verification" },
+  hardening:     { src: "img/diagrams/hardening.svg", kind: "diagram", alt: "Layers of server hardening" },
+  "mcp-sec":     { src: "img/diagrams/mcp.svg", kind: "diagram", alt: "AI agent to gateway, sandbox and MCP tools with guards" }
+};
+
+window.SITE.showcase = ["mtm2", "neurospace", "school", "jobkonnektor"];
+window.SITE.more = ["clinic", "trading", "radar", "webhook-sec"];
+
+window.SITE.proof = [
+  { big: "Top Rated", small: "on Upwork, 5.0 client rating" },
+  { big: "21 jobs", small: "completed for Upwork clients" },
+  { big: "Remote clients", small: "in Canada, Germany and Saudi Arabia" },
+  { big: "3 languages", small: "Arabic, French and English" }
+];

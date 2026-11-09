@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" font-family="Schibsted Grotesk, Segoe UI, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#18202b"/></marker>
+<pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#e6eaf0" stroke-width="1"/></pattern></defs>
+<rect width="1600" height="1000" fill="#f4f6f9"/><rect width="1600" height="1000" fill="url(#g)"/>
+<text x="80" y="110" font-size="40" font-weight="800" fill="#18202b">Secured payment flow</text>
+<line x1="80" y1="140" x2="1520" y2="140" stroke="#d5dbe3" stroke-width="2"/>
+<rect x="80" y="260" width="307" height="230" rx="10" fill="#ffffff" stroke="#d5dbe3" stroke-width="2"/>
+<text x="104" y="306" font-size="30" font-weight="700" fill="#18202b">Customer</text>
+<text x="104" y="348" font-size="24" fill="#5b6676">Checkout on</text>
+<text x="104" y="382" font-size="24" fill="#5b6676">the website</text>
+<line x1="393" y1="375.0" x2="451" y2="375.0" stroke="#18202b" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="457" y="260" width="307" height="230" rx="10" fill="#ffffff" stroke="#d5dbe3" stroke-width="2"/>
+<text x="481" y="306" font-size="30" font-weight="700" fill="#18202b">Payment gateway</text>
+<text x="481" y="348" font-size="24" fill="#5b6676">Hosted</text>
+<text x="481" y="382" font-size="24" fill="#5b6676">payment</text>
+<line x1="770" y1="375.0" x2="828" y2="375.0" stroke="#18202b" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="834" y="260" width="307" height="230" rx="10" fill="#e8edfd" stroke="#2448d8" stroke-width="2"/>
+<text x="858" y="306" font-size="30" font-weight="700" fill="#18202b">Webhook</text>
+<text x="858" y="348" font-size="24" fill="#5b6676">Signature check,</text>
+<text x="858" y="382" font-size="24" fill="#5b6676">replay protection</text>
+<line x1="1147" y1="375.0" x2="1205" y2="375.0" stroke="#18202b" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="1211" y="260" width="307" height="230" rx="10" fill="#ffffff" stroke="#d5dbe3" stroke-width="2"/>
+<text x="1235" y="306" font-size="30" font-weight="700" fill="#18202b">Back office</text>
+<text x="1235" y="348" font-size="24" fill="#5b6676">Encrypted keys,</text>
+<text x="1235" y="382" font-size="24" fill="#5b6676">CRM update</text>
+<rect x="80" y="640" width="433" height="200" rx="10" fill="#ffffff" stroke="#d5dbe3" stroke-width="2"/>
+<text x="104" y="686" font-size="30" font-weight="700" fill="#18202b">Nginx + TLS</text>
+<text x="104" y="728" font-size="24" fill="#5b6676">Hardened</text>
+<text x="104" y="762" font-size="24" fill="#5b6676">VPS</text>
+<line x1="296.5" y1="634" x2="296.5" y2="498" stroke="#d5dbe3" stroke-width="2.5" stroke-dasharray="8 8"/>
+<rect x="583" y="640" width="433" height="200" rx="10" fill="#ffffff" stroke="#d5dbe3" stroke-width="2"/>
+<text x="607" y="686" font-size="30" font-weight="700" fill="#18202b">Backups</text>
+<text x="607" y="728" font-size="24" fill="#5b6676">Automated,</text>
+<text x="607" y="762" font-size="24" fill="#5b6676">encrypted</text>
+<line x1="799.5" y1="634" x2="799.5" y2="498" stroke="#d5dbe3" stroke-width="2.5" stroke-dasharray="8 8"/>
+<rect x="1086" y="640" width="433" height="200" rx="10" fill="#ffffff" stroke="#d5dbe3" stroke-width="2"/>
+<text x="1110" y="686" font-size="30" font-weight="700" fill="#18202b">CI/CD</text>
+<text x="1110" y="728" font-size="24" fill="#5b6676">Reviewed</text>
+<text x="1110" y="762" font-size="24" fill="#5b6676">deploys</text>
+<line x1="1302.5" y1="634" x2="1302.5" y2="498" stroke="#d5dbe3" stroke-width="2.5" stroke-dasharray="8 8"/>
+</svg>

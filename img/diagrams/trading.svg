@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" font-family="Schibsted Grotesk, Segoe UI, Arial, sans-serif">
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#18202b"/></marker>
+<pattern id="g" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M40 0H0V40" fill="none" stroke="#e6eaf0" stroke-width="1"/></pattern></defs>
+<rect width="1600" height="1000" fill="#f4f6f9"/><rect width="1600" height="1000" fill="url(#g)"/>
+<text x="80" y="110" font-size="40" font-weight="800" fill="#18202b">Trading signal analytics platform</text>
+<line x1="80" y1="140" x2="1520" y2="140" stroke="#d5dbe3" stroke-width="2"/>
+<rect x="80" y="260" width="307" height="230" rx="10" fill="#ffffff" stroke="#d5dbe3" stroke-width="2"/>
+<text x="104" y="306" font-size="30" font-weight="700" fill="#18202b">TradingView</text>
+<text x="104" y="348" font-size="24" fill="#5b6676">Strategy alerts</text>
+<text x="104" y="382" font-size="24" fill="#5b6676">via webhook</text>
+<line x1="393" y1="375.0" x2="451" y2="375.0" stroke="#18202b" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="457" y="260" width="307" height="230" rx="10" fill="#ffffff" stroke="#d5dbe3" stroke-width="2"/>
+<text x="481" y="306" font-size="30" font-weight="700" fill="#18202b">Nginx</text>
+<text x="481" y="348" font-size="24" fill="#5b6676">TLS, rate limits,</text>
+<text x="481" y="382" font-size="24" fill="#5b6676">reverse proxy</text>
+<line x1="770" y1="375.0" x2="828" y2="375.0" stroke="#18202b" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="834" y="260" width="307" height="230" rx="10" fill="#e8edfd" stroke="#2448d8" stroke-width="2"/>
+<text x="858" y="306" font-size="30" font-weight="700" fill="#18202b">FastAPI</text>
+<text x="858" y="348" font-size="24" fill="#5b6676">Async ingest,</text>
+<text x="858" y="382" font-size="24" fill="#5b6676">paper-trade engine</text>
+<line x1="1147" y1="375.0" x2="1205" y2="375.0" stroke="#18202b" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="1211" y="260" width="307" height="230" rx="10" fill="#ffffff" stroke="#d5dbe3" stroke-width="2"/>
+<text x="1235" y="306" font-size="30" font-weight="700" fill="#18202b">React dashboard</text>
+<text x="1235" y="348" font-size="24" fill="#5b6676">P&amp;L per strategy,</text>
+<text x="1235" y="382" font-size="24" fill="#5b6676">live updates</text>
+<rect x="80" y="640" width="433" height="200" rx="10" fill="#ffffff" stroke="#d5dbe3" stroke-width="2"/>
+<text x="104" y="686" font-size="30" font-weight="700" fill="#18202b">PostgreSQL</text>
+<text x="104" y="728" font-size="24" fill="#5b6676">Trades, signals,</text>
+<text x="104" y="762" font-size="24" fill="#5b6676">strategy stats</text>
+<line x1="296.5" y1="634" x2="296.5" y2="498" stroke="#d5dbe3" stroke-width="2.5" stroke-dasharray="8 8"/>
+<rect x="583" y="640" width="433" height="200" rx="10" fill="#ffffff" stroke="#d5dbe3" stroke-width="2"/>
+<text x="607" y="686" font-size="30" font-weight="700" fill="#18202b">Redis</text>
+<text x="607" y="728" font-size="24" fill="#5b6676">Queues and</text>
+<text x="607" y="762" font-size="24" fill="#5b6676">caching</text>
+<line x1="799.5" y1="634" x2="799.5" y2="498" stroke="#d5dbe3" stroke-width="2.5" stroke-dasharray="8 8"/>
+<rect x="1086" y="640" width="433" height="200" rx="10" fill="#ffffff" stroke="#d5dbe3" stroke-width="2"/>
+<text x="1110" y="686" font-size="30" font-weight="700" fill="#18202b">Docker Compose</text>
+<text x="1110" y="728" font-size="24" fill="#5b6676">One-command</text>
+<text x="1110" y="762" font-size="24" fill="#5b6676">deploy on VPS</text>
+<line x1="1302.5" y1="634" x2="1302.5" y2="498" stroke="#d5dbe3" stroke-width="2.5" stroke-dasharray="8 8"/>
+</svg>
