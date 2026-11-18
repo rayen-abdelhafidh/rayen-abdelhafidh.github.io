@@ -154,7 +154,7 @@ window.SITE = {
     },
     {
       id: "sumo-bike", tracks: ["automotive"], featured: true, status: "academic",
-      title: "Bike-first city traffic simulation",
+      title: "E-Bike City: Car-Free Zone (CFZ) traffic simulation",
       what: "A microscopic traffic simulation of a city centre where road space is reallocated to bike lanes and most car trips shift to bicycles, to measure how cars and bikes share the network.",
       how: "Built the scenario in SUMO: the redesigned road network, origin-destination demand with the car-to-bike mode shift, and fixed-time versus actuated traffic signals, each run over several random seeds. Python notebooks then compute network macroscopic fundamental diagrams in 5-minute intervals and average OD travel times for cars and bikes. University project; the data is confidential, so the diagram shows the method only.",
       stack: ["SUMO", "Python", "pandas", "NumPy", "seaborn", "Jupyter"],
