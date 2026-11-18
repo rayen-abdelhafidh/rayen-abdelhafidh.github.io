@@ -153,6 +153,14 @@ window.SITE = {
       links: {}
     },
     {
+      id: "sumo-bike", tracks: ["automotive"], featured: true, status: "academic",
+      title: "Bike-first city traffic simulation",
+      what: "A microscopic traffic simulation of a city centre where road space is reallocated to bike lanes and most car trips shift to bicycles, to measure how cars and bikes share the network.",
+      how: "Built the scenario in SUMO: the redesigned road network, origin-destination demand with the car-to-bike mode shift, and fixed-time versus actuated traffic signals, each run over several random seeds. Python notebooks then compute network macroscopic fundamental diagrams in 5-minute intervals and average OD travel times for cars and bikes. University project; the data is confidential, so the diagram shows the method only.",
+      stack: ["SUMO", "Python", "pandas", "NumPy", "seaborn", "Jupyter"],
+      links: {}
+    },
+    {
       id: "can-ids", tracks: ["automotive", "security"], featured: true, status: "planned",
       title: "CAN bus intrusion detection",
       what: "Detects injected and spoofed frames on a vehicle CAN bus.",
@@ -258,6 +266,7 @@ window.SITE.media = {
   qos:           { src: "img/diagrams/qos.svg", kind: "diagram", alt: "5G KPIs into an anomaly model, map and dashboard" },
   "pase":        { src: "img/shots/pase.webp", kind: "shot", bar: "Simulink: PASE controller with ROS 2 publishers and subscribers", alt: "Simulink model of the PASE controller: ROS 2 subscribers, sensor monitoring block, Stateflow chart and ROS 2 publishers" },
   "can-monitor": { src: "img/shots/can-monitor.webp", kind: "shot", bar: "Terminal: dashboard ECU decoding CAN frames and raising faults", alt: "Terminal output: ECUs sending CAN IDs 0x100 to 0x300, decoded values and fault warnings B002, E001 and C001" },
+  "sumo-bike":   { src: "img/diagrams/sumo.svg", kind: "diagram", alt: "Road network and demand feed a SUMO simulation with fixed-time and actuated signals, analysed in Python for fundamental diagrams and travel times" },
   "can-ids":     { src: "img/diagrams/canids.svg", kind: "diagram", alt: "CAN traffic captured with SocketCAN, features, deep learning detector" },
   "autosar-swc": { src: "img/diagrams/autosar.svg", kind: "diagram", alt: "AUTOSAR layers: application, RTE, basic software, microcontroller" },
   "auto-cicd":   { src: "img/diagrams/autocicd.svg", kind: "diagram", alt: "Commit, cross build, tests and static analysis, artifacts" },
