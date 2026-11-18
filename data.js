@@ -137,6 +137,14 @@ window.SITE = {
       links: {}
     },
     {
+      id: "pase", tracks: ["automotive"], featured: true, status: "academic",
+      title: "PASE controller: passive start and entry",
+      what: "Keyless entry and push-button start controller for a car, modelled in Simulink and Stateflow and validated software-in-the-loop over ROS 2.",
+      how: "A Stateflow chart with 4 states (locked, unlocked, ignition on, engine running) and 4 detection modes (OFF, LOW 1 m, HIGH 3 m, AUTO adaptive to signal noise). A MATLAB Function block monitors the key-distance sensor for out-of-range values, impossible jumps, invalid readings and signal loss, and forces a safe state with a warning. Eight requirements were verified on a Simulink test bench, then live over ROS 2 Humble topics from Python nodes on WSL.",
+      stack: ["MATLAB", "Simulink", "Stateflow", "ROS 2", "Python", "SIL testing"],
+      links: {}
+    },
+    {
       id: "can-ids", tracks: ["automotive", "security"], featured: true, status: "planned",
       title: "CAN bus intrusion detection",
       what: "Detects injected and spoofed frames on a vehicle CAN bus.",
@@ -240,6 +248,7 @@ window.SITE.media = {
   pdf:           { src: "img/diagrams/pdf.svg", kind: "diagram", alt: "PDFs through OCR and LLM extraction into Excel" },
   scanner:       { src: "img/diagrams/scanner.svg", kind: "diagram", alt: "Binance pairs scanned on a schedule for EMA signals, with alerts" },
   qos:           { src: "img/diagrams/qos.svg", kind: "diagram", alt: "5G KPIs into an anomaly model, map and dashboard" },
+  "pase":        { src: "img/shots/pase.webp", kind: "shot", bar: "Simulink: PASE controller with ROS 2 publishers and subscribers", alt: "Simulink model of the PASE controller: ROS 2 subscribers, sensor monitoring block, Stateflow chart and ROS 2 publishers" },
   "can-ids":     { src: "img/diagrams/canids.svg", kind: "diagram", alt: "CAN traffic captured with SocketCAN, features, deep learning detector" },
   "autosar-swc": { src: "img/diagrams/autosar.svg", kind: "diagram", alt: "AUTOSAR layers: application, RTE, basic software, microcontroller" },
   "auto-cicd":   { src: "img/diagrams/autocicd.svg", kind: "diagram", alt: "Commit, cross build, tests and static analysis, artifacts" },
@@ -249,7 +258,7 @@ window.SITE.media = {
 };
 
 window.SITE.showcase = ["mtm2", "neurospace", "school", "jobkonnektor"];
-window.SITE.more = ["clinic", "trading", "radar", "webhook-sec"];
+window.SITE.more = ["clinic", "trading", "pase", "webhook-sec"];
 
 window.SITE.proof = [
   { big: "Top Rated", small: "on Upwork, 5.0 client rating" },
