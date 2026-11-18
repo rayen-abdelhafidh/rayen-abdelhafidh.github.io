@@ -265,7 +265,7 @@ window.SITE.media = {
   scanner:       { src: "img/diagrams/scanner.svg", kind: "diagram", alt: "Binance pairs scanned on a schedule for EMA signals, with alerts" },
   qos:           { src: "img/diagrams/qos.svg", kind: "diagram", alt: "5G KPIs into an anomaly model, map and dashboard" },
   "pase":        { src: "img/shots/pase.webp", kind: "shot", bar: "Simulink: PASE controller with ROS 2 publishers and subscribers", alt: "Simulink model of the PASE controller: ROS 2 subscribers, sensor monitoring block, Stateflow chart and ROS 2 publishers" },
-  "can-monitor": { src: "img/shots/can-monitor.webp", kind: "shot", bar: "Terminal: dashboard ECU decoding CAN frames and raising faults", alt: "Terminal output: ECUs sending CAN IDs 0x100 to 0x300, decoded values and fault warnings B002, E001 and C001" },
+  "can-monitor": { src: "img/shots/can-network.webp", kind: "diagram", alt: "Typical automotive CAN network: gateway module linking diagnostics, dashboard, drivetrain, comfort and infotainment CAN buses and their ECUs" },
   "sumo-bike":   { src: "img/shots/ebike-city.webp", kind: "photo", alt: "City street turned into a car-free zone, with a wide bike lane, cyclists and pedestrians" },
   "can-ids":     { src: "img/diagrams/canids.svg", kind: "diagram", alt: "CAN traffic captured with SocketCAN, features, deep learning detector" },
   "autosar-swc": { src: "img/diagrams/autosar.svg", kind: "diagram", alt: "AUTOSAR layers: application, RTE, basic software, microcontroller" },
