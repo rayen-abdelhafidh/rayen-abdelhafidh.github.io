@@ -156,6 +156,7 @@ section:last-child { border-bottom: 0; }
 .frame-url { font-size: .78rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .frame-shot img { aspect-ratio: 16 / 9; object-position: left top; }
 .frame-diagram img { object-fit: contain; background: #f4f6f9; }
+.frame-photo img { object-position: center; }
 
 /* ---------- Case studies ---------- */
 .cases { display: grid; gap: clamp(3rem, 7vw, 5.5rem); }

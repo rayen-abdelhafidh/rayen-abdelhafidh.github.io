@@ -65,6 +65,9 @@
       return `<a class="frame frame-shot ${size || ""}" href="${esc(src)}" target="_blank" rel="noopener" aria-label="Open full-size screenshot">
         <span class="frame-bar"><span class="frame-dots" aria-hidden="true"></span><span class="frame-url">${esc(m.bar || "")}</span></span>${img}</a>`;
     }
+    if (m.kind === "photo") {
+      return `<a class="frame frame-photo ${size || ""}" href="${esc(src)}" target="_blank" rel="noopener" aria-label="Open full-size image">${img}</a>`;
+    }
     return `<a class="frame frame-diagram ${size || ""}" href="${esc(src)}" target="_blank" rel="noopener" aria-label="Open full-size diagram">${img}</a>`;
   }
 
