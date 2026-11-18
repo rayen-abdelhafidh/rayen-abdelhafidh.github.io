@@ -145,6 +145,14 @@ window.SITE = {
       links: {}
     },
     {
+      id: "can-monitor", tracks: ["automotive"], featured: true, status: "academic",
+      title: "CAN bus vehicle monitoring and fault detection",
+      what: "A simulated vehicle network where engine, battery and brake ECUs talk over a virtual CAN bus, and a dashboard ECU decodes the frames, raises fault codes and logs everything. I added a web dashboard on top of the simulation.",
+      how: "Each ECU runs in its own thread and encodes its signals into CAN frames (IDs 0x100 to 0x300) with python-can. The dashboard ECU decodes them and checks six fault rules with priorities, from overspeed and high RPM to battery overheating and brake failure. Results go to a CSV log, matplotlib trend charts and a diagnostic summary. Encoders, decoders and the vehicle model have unit tests.",
+      stack: ["Python", "python-can", "CAN", "pandas", "matplotlib", "Unit testing"],
+      links: {}
+    },
+    {
       id: "can-ids", tracks: ["automotive", "security"], featured: true, status: "planned",
       title: "CAN bus intrusion detection",
       what: "Detects injected and spoofed frames on a vehicle CAN bus.",
@@ -249,6 +257,7 @@ window.SITE.media = {
   scanner:       { src: "img/diagrams/scanner.svg", kind: "diagram", alt: "Binance pairs scanned on a schedule for EMA signals, with alerts" },
   qos:           { src: "img/diagrams/qos.svg", kind: "diagram", alt: "5G KPIs into an anomaly model, map and dashboard" },
   "pase":        { src: "img/shots/pase.webp", kind: "shot", bar: "Simulink: PASE controller with ROS 2 publishers and subscribers", alt: "Simulink model of the PASE controller: ROS 2 subscribers, sensor monitoring block, Stateflow chart and ROS 2 publishers" },
+  "can-monitor": { src: "img/shots/can-monitor.webp", kind: "shot", bar: "Terminal: dashboard ECU decoding CAN frames and raising faults", alt: "Terminal output: ECUs sending CAN IDs 0x100 to 0x300, decoded values and fault warnings B002, E001 and C001" },
   "can-ids":     { src: "img/diagrams/canids.svg", kind: "diagram", alt: "CAN traffic captured with SocketCAN, features, deep learning detector" },
   "autosar-swc": { src: "img/diagrams/autosar.svg", kind: "diagram", alt: "AUTOSAR layers: application, RTE, basic software, microcontroller" },
   "auto-cicd":   { src: "img/diagrams/autocicd.svg", kind: "diagram", alt: "Commit, cross build, tests and static analysis, artifacts" },
