@@ -75,10 +75,10 @@ window.SITE = {
     {
       id: "hachira", tracks: ["ai"], status: "academic",
       title: "HACHIRA real-time anomaly detection",
-      what: "Detects abnormal behaviour on live camera streams and alerts a mobile app. Team project, awarded a certificate.",
-      how: "YOLOv8 and YOLOv8-Pose on IP-camera video, a Flask inference service, Firebase for events and a Flutter companion app.",
+      what: "Detects abnormal behaviour on live camera streams, such as a person holding a knife, and alerts a mobile app. Team project built at the Digilog Process Optimization Challenge, May 2025.",
+      how: "YOLOv8 and YOLOv8-Pose on IP-camera video, a Flask service that applies the rules and saves timestamped captures, Firebase push alerts and a Flutter app with a live video view. Built in five days at ENET'Com Sfax during the challenge run with Leipzig University and KNUST and funded by DAAD and BMZ.",
       stack: ["YOLOv8", "PyTorch", "Flask", "Firebase", "Flutter"],
-      links: {}
+      links: { cert: "img/certs/digilog-poc-2025.webp", event: "https://www.linkedin.com/posts/4c-enet-com_digilog-daad-bmz-activity-7335259602441113601-DMvB" }
     },
     {
       id: "pdf", tracks: ["ai"], status: "client",
@@ -246,7 +246,7 @@ window.SITE = {
     { when: "2022 – 2024", title: "Preparatory cycle, physics and chemistry", org: "IPEIM, Monastir" }
   ],
 
-  certifications: ["eJPT, Junior Penetration Tester (INE)", "CCNA 1 and 2 (Cisco)", "HCIA-Datacom (Huawei)", "Cybersecurity Fundamentals (Google)"],
+  certifications: ["eJPT, Junior Penetration Tester (INE)", "CCNA 1 and 2 (Cisco)", "HCIA-Datacom (Huawei)", "Cybersecurity Fundamentals (Google)", "Digilog Process Optimization Challenge, certificate of attendance (DAAD, May 2025)"],
   languages: "Arabic (native), French (fluent), English (fluent)"
 };
 

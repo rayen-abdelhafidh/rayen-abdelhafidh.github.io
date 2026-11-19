@@ -75,6 +75,8 @@
     const out = [];
     if (p.links.live) out.push(`<a href="${esc(p.links.live)}" target="_blank" rel="noopener">Open live site</a>`);
     if (p.links.repo) out.push(`<a href="${esc(p.links.repo)}" target="_blank" rel="noopener">View code</a>`);
+    if (p.links.cert) out.push(`<a href="${esc(root + p.links.cert)}" target="_blank" rel="noopener">View certificate</a>`);
+    if (p.links.event) out.push(`<a href="${esc(p.links.event)}" target="_blank" rel="noopener">About the event</a>`);
     return out.length ? `<p class="proj-links">${out.join("")}</p>` : "";
   }
   const status = (p) => `<span class="status status-${p.status}">${STATUS[p.status]}</span>`;
